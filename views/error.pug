@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  if (title === 404) 
+    h1#error-status #{status}
+    h2 #{error.message}
+  else
+    h1 #{error.message}
+    h2 #{error.status}
+    pre #{error.stack}

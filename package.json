@@ -1,0 +1,23 @@
+{
+  "name": "express-twitter",
+  "version": "1.0.0",
+  "description": "Node.js application that uses Twitter’s REST API to access Twitter profile information and render it to a user.",
+  "private": true,
+  "scripts": {
+    "start": "node app"
+  },
+  "author": "Liad Idan",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "~1.15.1",
+    "debug": "^2.2.0",
+    "express": "~4.13.4",
+    "express-session": "^1.14.1",
+    "oauth-1.0a": "^2.0.0",
+    "passport": "^0.3.2",
+    "passport-twitter": "^1.0.4",
+    "pug": "^2.0.0-beta6",
+    "request": "^2.76.0",
+    "serve-favicon": "~2.3.0"
+  }
+}

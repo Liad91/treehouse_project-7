@@ -1,0 +1,236 @@
+/** Redesign global.css */
+
+.circle--header {
+  background-position: 50% 50%;
+}
+
+.app--tweet--list p,
+.app--user--list p {
+  font-size: 1.6rem;
+}
+
+.app--tweet--author h4,
+.app--user--author h4 {
+  font-size: 1.7rem;
+}
+
+.circle--textarea--input {
+  height: 56px;
+  resize: none;
+}
+
+.circle--textarea--input:focus {
+  border-color: #8cc0d5;
+}
+
+.app--tweet--char {
+  font-weight: bold;
+}
+
+input[type="submit"] {
+  padding: 20px 25px;
+}
+
+/** Handlers */
+
+.right {
+  float: right;
+} 
+
+/** Adding style to profile page */
+
+a.app--like[like-status="like"] svg {
+  fill: #e81c4f;
+}
+
+a.app--like[like-status="like"] strong {
+  color: #e81c4f;
+}
+
+a.app--retweet[retweet-status="retweet"] svg {
+  fill: #19cf86;
+}
+
+a.app--retweet[retweet-status="retweet"] strong {
+  color: #19cf86;
+}
+
+img#loader {
+  display: none;
+  float: left;
+  width: 20px;
+  margin-top: 6px;
+}
+
+/** Remodal */
+
+.remodal-bg {
+  height: 100%;
+}
+
+.remodal-bg.remodal-is-opening,
+.remodal-bg.remodal-is-opened {
+  -webkit-filter: none;
+  filter: none;
+}
+
+.remodal-overlay {
+  background: rgba(41,47,51,0.9);
+}
+
+.remodal {
+  padding: 0;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.remodal-head {
+  padding: 6px 0;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.remodal-head h3,
+.remodal-body p,
+.remodal-footer textarea,
+.app--message--list {
+  margin-bottom: 0;
+}
+
+.remodal-head h3 {
+  color: #ccc;
+  font-weight: 400;
+  
+}
+
+.remodal-close,
+.remodal-close:hover {
+  box-shadow: none;
+}
+
+.remodal-close {
+  left: initial;
+  right: 0;
+}
+
+.remodal-body {
+  display: flex;
+  font-size: 14px;
+  padding: 20px 15px;
+}
+
+.remodal-body span {
+  color: #ccc;
+}
+
+.remodal-body img {
+  align-self: flex-start;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+
+.remodal-footer {
+  text-align: right;
+  padding: 15px 15px 6px;
+  background: rgba(0, 132, 180, .1);
+}
+
+.remodal-footer textarea {
+  height: initial;
+  padding: 8px 10px;
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 3px;
+}
+
+.remodal-footer .app--tweet--char {
+  position: initial;
+  margin-right: 15px;
+  font-size: 1.5rem;
+}
+
+.remodal-footer button {
+  margin: 0;
+  padding: 10px 16px;
+  font-size: 14px;
+}
+
+.remodal .app--tweet--char {
+  font-weight: 400;
+}
+
+/** Login page */
+
+#screenShot{
+  width: 35%;
+  box-shadow: 0 0 12px rgba(0,0,0,5);
+  border-radius: 10px;
+  margin-bottom: 3rem;
+}
+
+.features {
+  align-self: stretch;
+  width: 35%;
+  margin: 0 auto;
+}
+
+.btn {
+  box-shadow: none;
+  color: #fff;
+  margin: 0;
+}
+
+.btn:hover {
+  box-shadow: none;
+  color: #fff;
+}
+
+#login-btn {
+  background: #1da1f2;
+}
+
+#login-btn:hover {
+  background: #0c85d0;
+}
+
+#login-btn svg {
+  fill: #fff;
+  margin-right: 8px;
+}
+
+#logout-btn {
+  background: #f21d1d;
+}
+
+#logout-btn:hover {
+  background: #d00c0c;
+}
+
+#dashboard-btn {
+  background: #1df281;
+  margin-right: 15px;
+}
+
+#dashboard-btn:hover {
+  background: #0cd65f;
+}
+
+/** Error page */
+
+#error-status {
+  background: #1da1f2;
+  padding: 23px 14px;
+  font-size: 6rem;
+  color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 25px #000;
+}
+
+
+/** Media queries */
+
+@media (min-width: 641px) {
+  .remodal {
+    max-width: 600px;
+  }
+}
