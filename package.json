@@ -19,5 +19,13 @@
     "pug": "^2.0.0-beta6",
     "request": "^2.76.0",
     "serve-favicon": "~2.3.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Liad91/treehouse_project-7.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Liad91/treehouse_project-7/issues"
+  },
+  "homepage": "https://github.com/Liad91/treehouse_project-7#readme"
 }
