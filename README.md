@@ -46,7 +46,7 @@ Create `config\auth.json` file:
 {
   "consumerKey": "XXXXXXXXXXXXXXXXXXXXXXXX",
   "consumerSecret": "XXXXXXXXXXXXXXXXXXXXXXXX",
-  "callbackURL": "http://domain.com/twitter/callback"
+  "callbackURL": "http://YourDomain/twitter/callback"
 }
 ```
 
