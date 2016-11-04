@@ -28,6 +28,10 @@ Twitter Interface uses a number of open source projects to work properly:
 * [Passport](https://github.com/jaredhanson/passport) - Simple, unobtrusive authentication for Node.js.
 * [Request](https://github.com/request/request) - Simplified HTTP request client.
 
+### preparation
+
+Create a Twitter app through [Twitter’s developer portal](https://apps.twitter.com) and get the needed API keys.
+
 ### Installation
 
 ```
@@ -51,6 +55,11 @@ Create `config\auth.json` file:
 ```
 $ npm start
 ```
+
+### Todos
+
+- [ ] Add option to send direct messages.
+- [ ] Add responsive design CSS.
 
 ### License
 
