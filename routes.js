@@ -1,4 +1,3 @@
-var bodyParser = require('body-parser');
 var twitter = require('./twitter');
 
 /** Middleware to check if the user is logged in */ 
@@ -91,4 +90,4 @@ module.exports = function(app, passport) {
     twitter.newTweet(true, req, res);
   }); /** End /reply */
 
-}
+};

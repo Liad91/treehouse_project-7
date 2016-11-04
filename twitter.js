@@ -36,8 +36,8 @@ var requests = {
 };
 
 /** Calculate how much time has passed from a certain timestamp */
-function getDate(date) {
-  var created = new Date(date);
+function getDate(d) {
+  var created = new Date(d);
   var now = new Date();
   var year = created.getUTCFullYear();
   var date = new Date(now - created);
@@ -51,23 +51,19 @@ function getDate(date) {
     output = now.getFullYear() - year + ' years ago';
   } else if (months > 0) {
     if (months === 1) {
-      output = months + ' month ago'
+      output = months + ' month ago';
     } else {
-      output = months + ' months ago'
+      output = months + ' months ago';
     }
   } else if (days > 0) {
     output = days + ' days ago';
   } else if (hours) {
     output = hours + ' hours ago';
   } else {
-    output = minutes + ' minutes ago'
+    output = minutes + ' minutes ago';
   }
 
   return output;
-}
-
-function renderNewTweets(req, res) {
- 
 }
 
 module.exports = {
@@ -80,7 +76,7 @@ module.exports = {
       profileBackUrl: req.user.profile._json.profile_background_image_url,
       profileImgUrl: req.user.profile._json.profile_image_url,
       friends: req.user.profile._json.friends_count
-    }
+    };
 
     /** Get the user timeline data */
     var getTimeline = new Promise(function(resolve, reject) {
@@ -181,7 +177,7 @@ module.exports = {
     /** Render the error page if one of the promises has been reject */
     }).catch(function(error) {
       res.redirect('/?error=api');
-    })
+    });
   }, /** End dashboard method */
 
   newTweet: function(reply, req, res) {
@@ -318,4 +314,4 @@ module.exports = {
     });
   } /** End retweet method */
 
-} /** End module.exports */
+}; /** End module.exports */

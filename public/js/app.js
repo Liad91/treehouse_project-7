@@ -6,7 +6,6 @@ var app = {};
 $(document).ready(function() {
 
   var $ul = $('.app--tweet--list');
-  var $li = $ul.children();
   var $text = $('#tweet-textarea');
   var $char = $('#tweet-char');
   var $textareas = $('.circle--textarea--input');
@@ -320,12 +319,12 @@ $(document).ready(function() {
 
   /** Returns all the ids of the tweets in the timeline */
   function getTimelineIdArr() {
-    var $li = $('ul.app--tweet--list').children();
+    var $li = $ul.children();
     var id_arr = []; 
 
     $.each($li, function() {
       id_arr.push($(this).attr('id'));
-    })
+    });
 
     return id_arr;
   }
@@ -345,7 +344,7 @@ $(document).ready(function() {
 
     /** If there is more then 5 tweets in the timeline remove the oldest */
     if ($ul.children().length > 5) {
-      for (var i = $ul.children().length; i > 0; i--) {
+      for (i = $ul.children().length; i > 0; i--) {
         if (num) {
           $ul.children().last().remove();
           num--;
@@ -356,7 +355,7 @@ $(document).ready(function() {
   
   /** Noty.js - display notes */
   app.displayNote = function(msg, type) {
-    var note = noty ({
+    noty ({
       text: msg,
       type: type,
       layout: 'topCenter',
@@ -366,8 +365,8 @@ $(document).ready(function() {
         close: 'animated fadeOutUp'
       },
       timeout: 4000
-    })
-  }
+    });
+  };
 
   /** Invoke all the methods of tweetActions */
   function tweetEvents() {
@@ -381,4 +380,3 @@ $(document).ready(function() {
   tweetEvents();
 
 });
-
