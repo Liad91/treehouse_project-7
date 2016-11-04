@@ -1,5 +1,7 @@
 ## Twitter Interface
 
+![screen](https://cloud.githubusercontent.com/assets/19666213/20004269/f4b4cde2-a293-11e6-8254-0688d7fd96ce.jpg)
+
 Twitter Interface is a [Node.js](https://nodejs.org/) application that uses [Twitter’s REST API](https://dev.twitter.com/rest/public) to access your Twitter profiles information and render it to a user.
 
 ### What it does?
